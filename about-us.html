@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reel Me</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/aos.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Sign up as Fan Modal Popup Start -->
+
+    <div class="modal fade signup-popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+            <svg width="16" class="btn-close" data-bs-dismiss="modal" aria-label="Close" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.30251 7.8125L1.17451 2.80469L0.117012 1.77197C-0.0389881 1.61963 -0.0389881 1.37207 0.117012 1.21973L1.24851 0.114746C1.40451 -0.0375976 1.65801 -0.0375976 1.81401 0.114746L7.99951 6.15527L14.185 0.114258C14.341 -0.0380859 14.5945 -0.0380859 14.7505 0.114258L15.8825 1.21924C16.0385 1.37158 16.0385 1.61914 15.8825 1.77148L9.69651 7.8125L15.8825 13.853C16.0385 14.0054 16.0385 14.2529 15.8825 14.4053L14.751 15.5103C14.595 15.6626 14.3415 15.6626 14.1855 15.5103L7.99951 9.46973L2.87151 14.4775L1.81401 15.5103C1.65801 15.6626 1.40451 15.6626 1.24851 15.5103L0.117012 14.4053C-0.0389881 14.2529 -0.0389881 14.0054 0.117012 13.853L6.30251 7.8125Z" fill="#FF5E16"/>
+            </svg>
+
+        </div>
+        <div class="modal-body text-center">
+            <img src="images/sign-up-fan-img.svg" class="img-fluid" />
+            <h3 data-aos="fade-down" data-aos-duration="1000">Sign Up As Fan</h3>
+            <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed </p>
+            <form class="row form-wrapper pb-3 pt-2">
+                <div class="col-md-6 inner-filed">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email " required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                   <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Mobile/Cell">
+               </div>
+               <div class="inner-banner mt-3 px-0">
+                   <button type="submit" class="btn main-theme-btn orange w-100">Sign Up</button>
+               </div>
+           </form>
+       </div>
+
+   </div>
+</div>
+</div>
+
+<!--  Sign up as Fan Modal Popup End  -->
+
+
+<!-- Sign up as Creator Modal Popup Start -->
+
+<div class="modal fade signup-popup creator" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+        <svg width="16" class="btn-close" data-bs-dismiss="modal" aria-label="Close" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.30251 7.8125L1.17451 2.80469L0.117012 1.77197C-0.0389881 1.61963 -0.0389881 1.37207 0.117012 1.21973L1.24851 0.114746C1.40451 -0.0375976 1.65801 -0.0375976 1.81401 0.114746L7.99951 6.15527L14.185 0.114258C14.341 -0.0380859 14.5945 -0.0380859 14.7505 0.114258L15.8825 1.21924C16.0385 1.37158 16.0385 1.61914 15.8825 1.77148L9.69651 7.8125L15.8825 13.853C16.0385 14.0054 16.0385 14.2529 15.8825 14.4053L14.751 15.5103C14.595 15.6626 14.3415 15.6626 14.1855 15.5103L7.99951 9.46973L2.87151 14.4775L1.81401 15.5103C1.65801 15.6626 1.40451 15.6626 1.24851 15.5103L0.117012 14.4053C-0.0389881 14.2529 -0.0389881 14.0054 0.117012 13.853L6.30251 7.8125Z" fill="#FF5E16"/>
+        </svg>
+
+    </div>
+    <div class="modal-body text-center">
+        <img src="images/sign-up-creator-img.svg" class="img-fluid" />
+        <h3 class="text-white" data-aos="fade-down" data-aos-duration="1000">Sign Up As Creator</h3>
+        <p class="text-white">Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed </p>
+        <form class="row form-wrapper pb-3 pt-2">
+            <div class="col-md-6 inner-filed">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+            </div>
+            <div class="col-md-6 inner-filed">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+            </div>
+            <div class="col-md-6 inner-filed">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email " required>
+            </div>
+            <div class="col-md-6 inner-filed">
+             <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Mobile/Cell">
+         </div>
+         <div class="inner-banner mt-3 px-0">
+           <button type="submit" class="btn main-theme-btn white w-100">Sign Up</button>
+       </div>
+   </form>
+</div>
+
+</div>
+</div>
+</div>
+
+<!--  Sign up as Creator Modal Popup End  -->
+
+
+<!-- Header Start -->
+
+<nav class="navbar navbar-expand-lg navbar-light nabvar-wrapper py-4">
+  <div class="ast-container d-flex align-items-center">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/Logo.svg">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+     <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Creator 0% Offer</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="landing-page.html">Support</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+  </ul>
+</div>
+
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav ms-auto align-items-center">
+    <a class="nav-link me-4 join-free-btn sign-up-fan-btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up as Fan</a>
+    <a class="nav-link join-free-btn des-view" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up as Creator</a>
+</div>
+</div>
+
+
+</div>
+</nav>
+<!-- Header End -->
+
+<!-- Banner Section Start -->
+
+<div class="banner-wrapper about-banner-wrapper container-fluid">
+    <div class="ast-container">
+        <div class="row banner-row">
+            <div class="col-lg-12 banner-content text-center d-flex justify-content-center align-items-center flex-wrap pb-0">
+                <p class="w-100 pb-2">Designed to give you the best experience</p>
+                <h1 class="" data-aos="fade-down" data-aos-duration="900">Where Content Creators &<br/> Fans Connect </h1> 
+            </div>   
+        </div>
+    </div>
+</div>
+
+<!-- Banner Section End -->
+
+
+<!-- About Us Reelme Section Start -->
+
+<section class="testimonial-wrapper aboutus-reelme-wrapper container-fluid">
+    <div class="inner-testimonial">
+        <div class="ast-container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-left">
+                    <h4 class="pb-3">About ReelMe</h4>
+                    <p class="desktop-p">“I saw other platforms weren’t offering some things that could really boost content creators’ earnings & give fans a better experience.”</p>
+                    <p class="desktop-p">Reelme was created when founder Jono noticed that fan & content creator sites weren’t as good as they could be. </p>
+                    <p class="desktop-p">Reelme is the place where content creators of all kinds can give their fans what they want, and create a great lifestyle for themselves.</p>
+                    <p class="d-none mobile-p">Content creators - Reelme is a place where creators of all types can do their thing and connect to their fans. </p>
+                    <p class="d-none mobile-p">Fans - you’ll find this site easy to use, with all the mobile features & high resolution video quality you’d expect. </p>
+                    <div class="banner-btn d-flex align-items-center w-100 pt-3">
+                        <a href="#" class="main-theme-btn orange full" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up as Creator</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-right">
+                    <div class="quotes mt-5">
+                        <h5 class="desktop-p">“It’s about making a great<br/> platform to support content<br/> creators.”</h5>
+                        <h5 class="d-none mobile-p">“I want to help content creators earn a great income from making cool stuff”</h5>
+                        <h6>John Doe, <span>Founder</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Reelme Section End -->
+
+
+
+<!-- Help Content Section Start -->
+
+<section class="help-content-creator-wrapper container-fluid text-center pt-100 pb-60">
+    <div class="ast-container">
+        <div class="row">
+            <div class="col-12 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                <h3>We help content creators get closer <br>to fans and make serious money!</h3>
+            </div>
+        </div>
+        <div class="row inner-row">
+            <div class="col-md-4 col-lg-4 inner-content"> 
+                <img src="images/commision.svg">
+                <h5>Just 10%<br/> commission, no<br/> hidden fees</h5>
+            </div>
+            <div class="col-md-4 col-lg-4 inner-content"> 
+                <img src="images/security.svg">
+                <h5>Bank level security</h5>
+            </div>
+            <div class="col-md-4 col-lg-4 inner-content"> 
+                <img src="images/post.svg">
+                <h5>Adult Content <br/>Welcome</h5>
+            </div>
+            <div class="col-md-4 col-lg-4 inner-content"> 
+                <img src="images/demand.svg">
+                <h5>Instant <br>payment</h5>
+            </div>
+            <div class="col-md-4 col-lg-4 inner-content"> 
+                <img src="images/search.svg">
+                <h5>It's so easy for your<br/> fans to find you</h5>
+            </div>
+            <div class="col-md-4 col-lg-4 inner-content"> 
+                <img src="images/live.svg">
+                <h5>Live Streaming with<br/> tipping </h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Help Content Section End -->
+
+<!-- connect Creator Section Start -->
+
+<section class="connect-creator-wrapper pb-60 container-fluid aboutus-creator">
+    <div class="inner-connect d-flex align-items-center justify-content-center">
+        <div class="ast-container">
+            <div class="row">
+                <div class="col-lg-12 col-full text-center">
+                    <h4 class="text-white pb-2 desktop-p">Connect with Fans & Creators<br/> in under 30 Seconds</h4>
+                    <h4 class="mobile-p d-none text-white">Join Now - 0% Commission for 1 Year</h4>
+                    <p class="text-white pb-2 desktop-p">In about 30 seconds, you could be connecting with your<br/> favorite content creators, or posting up your content to start<br/> earning cash every month. </p>
+                    <p class="mobile-p d-none text-white">Earn cash as a content creator on Reelme. Grow your fanbase for free, and get paid direct by your fans</p>
+                    <form class="row form-wrapper pb-3 pt-4">
+                        <div class="col-md-6 inner-filed">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col-md-6 inner-filed">
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                        <div class="col-md-6 inner-filed">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email ">
+                        </div>
+                        <div class="col-md-6 inner-filed">
+                            <input type="tel" id="phone" class="form-control" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Mobile/Cell">
+                        </div>
+                    </form>
+                    <a href="#" class="main-theme-btn border full m-auto">Sign Up Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+<!-- Connect Creator Section End --> 
+
+<!-- About Us Text Slider Section Start -->
+
+<section class="aboutus-text-img-slider container-fluid">
+    <div class="ast-container pt-60 pb-60">
+        <div class="slider-content-wrapper">
+            <div class="row align-items-center d-flex one">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 before-arrow col-left text-start">
+                    <img src="images/landing-img-box-1.png" class="img-fluid me-auto" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left col-right">
+                    <h3 class="pb-2" data-aos="fade-down" data-aos-duration="800">Search Feature:<br/> Grow Your Fanbase for Free</h3>
+                    <p>Right now, fans are on Reelme looking for content just like yours.</p>
+                    <p>Our ‘search’ feature puts you in front of paying fans, exactly when they’re looking for a content creator to subscribe to. </p>
+                    <p>Get in on the ground floor and grow your fanbase for free when you start posting content on our platform. </p>
+                    <div class="banner-btn d-flex align-items-center justify-content-center w-100 pt-4 d-none mobile-p">
+                    <a href="#" class="main-theme-btn orange full">Join Now</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center d-flex one">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 before-arrow col-left text-start">
+                    <img src="images/landing-img-box-2.png" class="img-fluid me-auto" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left col-right">
+                    <h3 class="pb-4" data-aos="fade-down" data-aos-duration="800">Anti-Piracy Security: Protect Your Premium Content</h3>
+                    <p>Some platforms make it easy for thieves to screen capture your premium content and put it on piracy sites for free.</p> 
+                    <p>Reelme has in-built anti-piracy security (for desktop & mobile) to stop this happening.</p>
+                    <p>This means only your paying fans see your work, and your premium content stays exclusive.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center d-flex one">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 before-arrow col-left text-start">
+                    <img src="images/landing-img-box-3.png" class="img-fluid me-auto" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left col-right">
+                    <h3 class="pb-2" data-aos="fade-down" data-aos-duration="800">Top-Level Technology</h3>
+                    <p>Content creators are sick of glitchy sites, built on old technology.</p>
+                    <p>Reelme give you a seamless, stable, easy-to-use platform. It’s built on the latest tech to make it easy for creators to share their content.</p>
+                    <p>On Reelme, you can:</p>
+                    <p>
+                        <ul class="px-0 desktop-p">
+                            <li class="d-flex align-items-center">
+                                <div class="ic-img me-3">
+                                    <img src="images/banner-check.svg" class="img-fluid">
+                                </div>
+                                <div class="check-content">Stay anonymous - block your content from showing in certain places
+                                </div> 
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="ic-img me-3">
+                                    <img src="images/banner-check.svg" class="img-fluid">
+                                </div>
+                                <div class="check-content">Withdraw funds to your bank account whenever you want
+                                </div> 
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="ic-img me-3">
+                                    <img src="images/banner-check.svg" class="img-fluid">
+                                </div>
+                                <div class="check-content">Livestreaming, tipping, pay per view.
+                                </div> 
+                            </li>
+                        </ul>
+                    </p>
+                    <div class="banner-btn d-flex align-items-center justify-content-center w-100 pt-4 d-none mobile-p">
+                    <a href="#" class="main-theme-btn orange full">Join Now</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center d-flex one">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 before-arrow col-left text-start">
+                    <img src="images/landing-img-box-4.png" class="img-fluid me-auto" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left col-right">
+                    <h3 class="pb-4" data-aos="fade-down" data-aos-duration="800">All Content Creators<br/> Welcome & Valued</h3>
+                    <p>If you’re an adult content creator, you can feel at home on Reelme.</p> 
+                    <p>We value all our creators, & our platform is built to help fans find the type of content they want.</p> 
+                    <p>Because Reelme is the new kid on the block, we listen to our content creators. Whenever you need help, we can guarantee you’ll have a real person to help you out.</p> 
+                    <div class="banner-btn d-flex align-items-center justify-content-center w-100 pt-4 d-none mobile-p">
+                    <a href="#" class="main-theme-btn orange full">Join Now</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Text Slider Section End -->
+
+<!--  FAQ Section Start  -->
+
+<section class="faq-wrapper container-fluid pt-100 pb-60">
+    <div class="ast-container">
+        <div class="row">
+            <div class="col-lg-12 col-full text-center">
+                <h4 class="pb-3">Faq’s</h4>
+                <p>If your question isn't listed here, click through to the enquiry page and ask<br/> us directly. We’ll get back to you within 24 hours. </p>
+                <div class="accordion text-start pb-60" id="myAccordion">
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">How often will I get paid as a content creator?</button>                                 
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">What kind of content can go on Reelme?</button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">How much can content creators make?</button>                     
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">What are the terms & conditions?</button>                     
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">How secure is the platform?</button>                     
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">What ways can fans interact with content creators?</button>                     
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="main-theme-btn orange full m-auto">Ask A Question</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  FAQ Secion End  -->
+
+<!-- Footer Start -->
+
+<footer class="main-footer-wrapper container-fluid">
+    <div class="ast-container">
+        <div class="row align-items-center">
+            <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12 footer-navbar px-0">
+                <p>© 2021 ReelMe. All Rights Reserved.</p>
+                <ul class="d-flex"> 
+                    <li><a href="#">Privacy Policy</a></li><span>|</span>
+                    <li><a href="#">Cookie Policy</a></li><span>|</span>
+                    <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 footer-social-media px-0">
+                <ul class="d-flex justify-content-end">
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="bottom-bar container-fluid text-center">
+    <div class="row py-4">
+        <div class="col-lg-12 d-flex align-items-center justify-content-center">
+            <span>Website strategy, creativity & development by</span><a href="#"><img src="images/nav_ic.svg" class="img-fluid" /></a>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer End -->
+
+<script>
+  AOS.init();
+</script>
+
+<script type="text/javascript">
+    $('.slider-content-wrapper').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows:true,
+      dots: true,
+      prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+  });
+
+    $('.testimonial-slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows:true,
+      dots: true,
+      prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+  });
+
+    $('.creator-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows:true,
+      dots: true,
+      prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+  });
+
+$(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('nav').addClass("sticky");
+        }
+        else{
+            $('nav').removeClass("sticky");
+        }
+    });    
+
+</script>
+
+
+</body>
+
+</html>

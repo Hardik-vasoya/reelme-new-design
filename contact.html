@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reel Me</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/aos.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<!-- Sign up as Fan Modal Popup Start -->
+
+    <div class="modal fade signup-popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+            <svg width="16" class="btn-close" data-bs-dismiss="modal" aria-label="Close" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.30251 7.8125L1.17451 2.80469L0.117012 1.77197C-0.0389881 1.61963 -0.0389881 1.37207 0.117012 1.21973L1.24851 0.114746C1.40451 -0.0375976 1.65801 -0.0375976 1.81401 0.114746L7.99951 6.15527L14.185 0.114258C14.341 -0.0380859 14.5945 -0.0380859 14.7505 0.114258L15.8825 1.21924C16.0385 1.37158 16.0385 1.61914 15.8825 1.77148L9.69651 7.8125L15.8825 13.853C16.0385 14.0054 16.0385 14.2529 15.8825 14.4053L14.751 15.5103C14.595 15.6626 14.3415 15.6626 14.1855 15.5103L7.99951 9.46973L2.87151 14.4775L1.81401 15.5103C1.65801 15.6626 1.40451 15.6626 1.24851 15.5103L0.117012 14.4053C-0.0389881 14.2529 -0.0389881 14.0054 0.117012 13.853L6.30251 7.8125Z" fill="#FF5E16"/>
+            </svg>
+
+        </div>
+        <div class="modal-body text-center">
+            <img src="images/sign-up-fan-img.svg" class="img-fluid" />
+            <h3 data-aos="fade-down" data-aos-duration="1000">Sign Up As Fan</h3>
+            <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed </p>
+            <form class="row form-wrapper pb-3 pt-2">
+                <div class="col-md-6 inner-filed">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email " required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                   <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Mobile/Cell">
+               </div>
+               <div class="inner-banner mt-3 px-0">
+                   <button type="submit" class="btn main-theme-btn orange w-100">Sign Up</button>
+               </div>
+           </form>
+       </div>
+
+   </div>
+</div>
+</div>
+
+<!--  Sign up as Fan Modal Popup End  -->
+
+
+<!-- Sign up as Creator Modal Popup Start -->
+
+<div class="modal fade signup-popup creator" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+        <svg width="16" class="btn-close" data-bs-dismiss="modal" aria-label="Close" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.30251 7.8125L1.17451 2.80469L0.117012 1.77197C-0.0389881 1.61963 -0.0389881 1.37207 0.117012 1.21973L1.24851 0.114746C1.40451 -0.0375976 1.65801 -0.0375976 1.81401 0.114746L7.99951 6.15527L14.185 0.114258C14.341 -0.0380859 14.5945 -0.0380859 14.7505 0.114258L15.8825 1.21924C16.0385 1.37158 16.0385 1.61914 15.8825 1.77148L9.69651 7.8125L15.8825 13.853C16.0385 14.0054 16.0385 14.2529 15.8825 14.4053L14.751 15.5103C14.595 15.6626 14.3415 15.6626 14.1855 15.5103L7.99951 9.46973L2.87151 14.4775L1.81401 15.5103C1.65801 15.6626 1.40451 15.6626 1.24851 15.5103L0.117012 14.4053C-0.0389881 14.2529 -0.0389881 14.0054 0.117012 13.853L6.30251 7.8125Z" fill="#FF5E16"/>
+        </svg>
+
+    </div>
+    <div class="modal-body text-center">
+        <img src="images/sign-up-creator-img.svg" class="img-fluid" />
+        <h3 class="text-white" data-aos="fade-down" data-aos-duration="1000">Sign Up As Creator</h3>
+        <p class="text-white">Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed </p>
+        <form class="row form-wrapper pb-3 pt-2">
+            <div class="col-md-6 inner-filed">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+            </div>
+            <div class="col-md-6 inner-filed">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+            </div>
+            <div class="col-md-6 inner-filed">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email " required>
+            </div>
+            <div class="col-md-6 inner-filed">
+             <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Mobile/Cell">
+         </div>
+         <div class="inner-banner mt-3 px-0">
+           <button type="submit" class="btn main-theme-btn white w-100">Sign Up</button>
+       </div>
+   </form>
+</div>
+
+</div>
+</div>
+</div>
+
+<!--  Sign up as Creator Modal Popup End  -->
+
+
+<!-- Header Start -->
+
+<nav class="navbar navbar-expand-lg navbar-light nabvar-wrapper py-4 contact">
+  <div class="ast-container d-flex align-items-center">
+   <a class="navbar-brand" href="index.html">
+        <img src="images/Logo.svg">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+     <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Creator 0% Offer</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="landing-page.html">Support</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+  </ul>
+</div>
+
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav ms-auto align-items-center">
+    <a class="nav-link me-4 join-free-btn sign-up-fan-btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up as Fan</a>
+    <a class="nav-link join-free-btn des-view" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up as Creator</a>
+</div>
+</div>
+
+
+</div>
+</nav>
+<!-- Header End -->
+
+<!-- Contact Section Start -->
+
+<section class="contact-wrapper container-fluid pt-100 text-center pb-100">
+    <div class="ast-container"> 
+        <div class="row">
+            <h3 class="pb-4 desktop-p">Support</h3>
+            <h3 class="mobile-p d-none">Get in touch</h3>
+            <p>Got a question? Call or email us below.</p>
+        </div>
+        <div class="row contact-row d-flex align-items-center justify-content-center">
+            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 inner-box one">
+                <img src="images/ic-call.svg" class="img-fluid" />
+                <a class="no d-block w-100" href="tel:1300098409">1300 098 409</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 inner-box two">
+                <img src="images/ic-email.svg" class="img-fluid" />
+                <div class="email-inner d-flex justify-content-between align-items-center w-100">
+                 <h6 class="mb-0">Send Email</h6>   
+                 <a class="arrow d-block" href="#"><img src="images/right-arrow.svg" class="img-fluid pb-0" /></a>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 inner-box three">
+            <img src="images/ic-location.svg" class="img-fluid" />
+            <a class="location d-block" href="https://goo.gl/maps/S7rtyoX8h5tEUAeB9" target="_blank">29/19 McCauley St<br/> MATRAVILLE NSW 2036</a>
+        </div>
+    </div>
+    <div class="row make-enquiry-wrapper">
+        <h5>Make an enquiry</h5>
+        <p>Any questions you have about the Reelme platorm, let us know, and we’ll get back to<br/> you within 24 hours. </p>
+
+        <form class="row form-wrapper pt-60">
+            <div class="col-md-6 inner-filed">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+            </div>
+            <div class="col-md-6 inner-filed">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+            </div>
+            <div class="col-md-6 inner-filed">
+               <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone ">
+           </div>
+            <div class="col-md-6 inner-filed">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email " required>
+            </div>
+            <div class="col-md-12 inner-filed text">
+                <textarea id="tell us" class="form-control" name="tell us" rows="4" cols="50" placeholder="Tell us more..."></textarea>
+            </div>
+           <div class="inner-banner mt-3 px-0">
+             <button type="submit" class="btn main-theme-btn orange w-100 m-auto">Submit Enquiry</button>
+         </div>
+     </form>
+ </div>
+</div>
+</section>
+
+<!-- Contact Section End -->
+
+
+<!-- Footer Start -->
+
+<footer class="main-footer-wrapper container-fluid">
+    <div class="ast-container">
+        <div class="row align-items-center">
+            <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12 footer-navbar px-0">
+                <p>© 2021 ReelMe. All Rights Reserved.</p>
+                <ul class="d-flex"> 
+                    <li><a href="#">Privacy Policy</a></li><span>|</span>
+                    <li><a href="#">Cookie Policy</a></li><span>|</span>
+                    <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 footer-social-media px-0">
+                <ul class="d-flex justify-content-end">
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="bottom-bar container-fluid text-center">
+    <div class="row py-4">
+        <div class="col-lg-12 d-flex align-items-center justify-content-center">
+            <span>Website strategy, creativity & development by</span><a href="#"><img src="images/nav_ic.svg" class="img-fluid" /></a>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer End -->
+
+<script>
+  AOS.init();
+</script>
+
+<script type="text/javascript">
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('nav').addClass("sticky");
+        }
+        else{
+            $('nav').removeClass("sticky");
+        }
+    });    
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reel Me</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/aos.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+<!-- Sign up as Fan Modal Popup Start -->
+
+    <div class="modal fade signup-popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+            <svg width="16" class="btn-close" data-bs-dismiss="modal" aria-label="Close" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.30251 7.8125L1.17451 2.80469L0.117012 1.77197C-0.0389881 1.61963 -0.0389881 1.37207 0.117012 1.21973L1.24851 0.114746C1.40451 -0.0375976 1.65801 -0.0375976 1.81401 0.114746L7.99951 6.15527L14.185 0.114258C14.341 -0.0380859 14.5945 -0.0380859 14.7505 0.114258L15.8825 1.21924C16.0385 1.37158 16.0385 1.61914 15.8825 1.77148L9.69651 7.8125L15.8825 13.853C16.0385 14.0054 16.0385 14.2529 15.8825 14.4053L14.751 15.5103C14.595 15.6626 14.3415 15.6626 14.1855 15.5103L7.99951 9.46973L2.87151 14.4775L1.81401 15.5103C1.65801 15.6626 1.40451 15.6626 1.24851 15.5103L0.117012 14.4053C-0.0389881 14.2529 -0.0389881 14.0054 0.117012 13.853L6.30251 7.8125Z" fill="#FF5E16"/>
+            </svg>
+
+        </div>
+        <div class="modal-body text-center">
+            <img src="images/sign-up-fan-img.svg" class="img-fluid" />
+            <h3 data-aos="fade-down" data-aos-duration="1000">Sign Up As Fan</h3>
+            <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed </p>
+            <form class="row form-wrapper pb-3 pt-2">
+                <div class="col-md-6 inner-filed">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email " required>
+                </div>
+                <div class="col-md-6 inner-filed">
+                   <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Mobile/Cell">
+               </div>
+               <div class="inner-banner mt-3 px-0">
+                   <button type="submit" class="btn main-theme-btn orange w-100">Sign Up</button>
+               </div>
+           </form>
+       </div>
+
+   </div>
+</div>
+</div>
+
+<!--  Sign up as Fan Modal Popup End  -->
+
+
+<!-- Sign up as Creator Modal Popup Start -->
+
+<div class="modal fade signup-popup creator" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+        <svg width="16" class="btn-close" data-bs-dismiss="modal" aria-label="Close" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.30251 7.8125L1.17451 2.80469L0.117012 1.77197C-0.0389881 1.61963 -0.0389881 1.37207 0.117012 1.21973L1.24851 0.114746C1.40451 -0.0375976 1.65801 -0.0375976 1.81401 0.114746L7.99951 6.15527L14.185 0.114258C14.341 -0.0380859 14.5945 -0.0380859 14.7505 0.114258L15.8825 1.21924C16.0385 1.37158 16.0385 1.61914 15.8825 1.77148L9.69651 7.8125L15.8825 13.853C16.0385 14.0054 16.0385 14.2529 15.8825 14.4053L14.751 15.5103C14.595 15.6626 14.3415 15.6626 14.1855 15.5103L7.99951 9.46973L2.87151 14.4775L1.81401 15.5103C1.65801 15.6626 1.40451 15.6626 1.24851 15.5103L0.117012 14.4053C-0.0389881 14.2529 -0.0389881 14.0054 0.117012 13.853L6.30251 7.8125Z" fill="#FF5E16"/>
+        </svg>
+
+    </div>
+    <div class="modal-body text-center">
+        <img src="images/sign-up-creator-img.svg" class="img-fluid" />
+        <h3 class="text-white" data-aos="fade-down" data-aos-duration="1000">Sign Up As Creator</h3>
+        <p class="text-white">Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed </p>
+        <form class="row form-wrapper pb-3 pt-2">
+            <div class="col-md-6 inner-filed">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+            </div>
+            <div class="col-md-6 inner-filed">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+            </div>
+            <div class="col-md-6 inner-filed">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email " required>
+            </div>
+            <div class="col-md-6 inner-filed">
+             <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Mobile/Cell">
+         </div>
+         <div class="inner-banner mt-3 px-0">
+           <button type="submit" class="btn main-theme-btn white w-100">Sign Up</button>
+       </div>
+   </form>
+</div>
+
+</div>
+</div>
+</div>
+
+<!--  Sign up as Creator Modal Popup End  -->
+
+<!-- Header Start -->
+
+<nav class="navbar navbar-expand-lg navbar-light nabvar-wrapper py-4">
+  <div class="ast-container d-flex align-items-center">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/Logo.svg">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Creator 0% Offer</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="landing-page.html">Support</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+  </ul>
+</div>
+
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav ms-auto align-items-center">
+    <a class="nav-link me-4 join-free-btn sign-up-fan-btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up as Fan</a>
+    <a class="nav-link join-free-btn des-view" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up as Creator</a>
+</div>
+</div>
+
+
+</div>
+</nav>
+
+<!-- Header End -->
+
+
+<!--  Terms & Condition Section Start  -->
+
+<section class="terms-condition-wrapper container-fluid pt-60 pb-100">
+    <div class="ast-container">
+        <div class="row">
+            <h3 class="px-0">Terms and conditions</h3>
+
+            <p>These terms and conditions (“Terms”, “Agreement”) are an agreement between Advanced Business Abilities (“Advanced Business Abilities”, “us”, “we” or “our”) and you (“User”, “you” or “your”). This Agreement sets forth the general terms and conditions of your use of the advancedbusinessabilities.com website and any of its products or services (collectively, “Website” or “Services”).</p>
+
+            <h5>Accounts and membership</h5>
+
+            <p>You must be at least 16 years of age to use this Website. By using this Website and by agreeing to this Agreement you warrant and represent that you are at least 16 years of age.</p>
+            <p>If you create an account on the Website, you are responsible for maintaining the security of your account and you are fully responsible for all activities that occur under the account and any other actions taken in connection with it. We may, but have no obligation to, monitor and review new accounts before you may sign in and use our Services. Providing false contact information of any kind may result in the termination of your account. You must immediately notify us of any unauthorized uses of your account or any other breaches of security. We will not be liable for any acts or omissions by you, including any damages of any kind incurred as a result of such acts or omissions. We may suspend, disable, or delete your account (or any part thereof) if we determine that you have violated any provision of this Agreement or that your conduct or content would tend to damage our reputation and goodwill. If we delete your account for the foregoing reasons, you may not re-register for our Services. We may block your email address and Internet protocol address to prevent further registration.</p>
+
+            <h5>User content</h5>
+            <p>We do not own any data, information or material (“Content”) that you submit on the Website in the course of using the Service. You shall have sole responsibility for the accuracy, quality, integrity, legality, reliability, appropriateness, and intellectual property ownership or right to use of all submitted Content. We may monitor and review Content on the Website submitted or created using our Services by you. You grant us permission to access, copy, distribute, store, transmit, reformat, display and perform the Content of your user account solely as required for the purpose of providing the Services to you. Without limiting any of those representations or warranties, we have the right, though not the obligation, to, in our own sole discretion, refuse or remove any Content that, in our reasonable opinion, violates any of our policies or is in any way harmful or objectionable. You also grant us the license to use, reproduce, adapt, modify, publish or distribute the Content created by you or stored in your user account for commercial, marketing or any similar purpose.</p>
+
+            <h5>Billing and payments</h5>
+            <p>You shall pay all fees or charges to your account in accordance with the fees, charges, and billing terms in effect at the time a fee or charge is due and payable. If auto-renewal is enabled for the Services you have subscribed for, you will be charged automatically in accordance with the term you selected. Sensitive and private data exchange happens over a SSL secured communication channel and is encrypted and protected with digital signatures, and our Website is also in compliance with PCI vulnerability standards in order to create as secure of an environment as possible for Users. Scans for malware are performed on a regular basis for additional security and protection. If, in our judgment, your purchase constitutes a high-risk transaction, we will require you to provide us with a copy of your valid government-issued photo identification, and possibly a copy of a recent bank statement for the credit or debit card used for the purchase. We reserve the right to change products and product pricing at any time. We also reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased per person, per household or per order. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or orders that use the same billing and/or shipping address. In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e-mail and/or billing address/phone number provided at the time the order was made.</p>
+
+            <h5>Accuracy of information</h5>
+            <p>Occasionally there may be information on the Website that contains typographical errors, inaccuracies or omissions that may relate to promotions and offers. We reserve the right to correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information on the Website or on any related Service is inaccurate at any time without prior notice (including after you have submitted your order). We undertake no obligation to update, amend or clarify information on the Website including, without limitation, pricing information, except as required by law. No specified update or refresh date applied on the Website should be taken to indicate that all information on the Website or on any related Service has been modified or updated.</p>
+        </div>
+    </div>
+</section>
+
+<!--  Terms & Condition Section End  -->
+
+
+<!-- Footer Start -->
+
+<footer class="main-footer-wrapper container-fluid">
+    <div class="ast-container">
+        <div class="row align-items-center">
+            <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12 footer-navbar px-0">
+                <p>© 2021 ReelMe. All Rights Reserved.</p>
+                <ul class="d-flex"> 
+                    <li><a href="#">Privacy Policy</a></li><span>|</span>
+                    <li><a href="#">Cookie Policy</a></li><span>|</span>
+                    <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 footer-social-media px-0">
+                <ul class="d-flex justify-content-end">
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="bottom-bar container-fluid text-center">
+    <div class="row py-4">
+        <div class="col-lg-12 d-flex align-items-center justify-content-center">
+            <span>Website strategy, creativity & development by</span><a href="#"><img src="images/nav_ic.svg" class="img-fluid" /></a>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer End -->
+
+<script>
+  AOS.init();
+</script>
+
+<script type="text/javascript">
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('nav').addClass("sticky");
+        }
+        else{
+            $('nav').removeClass("sticky");
+        }
+    });    
+
+</script>
+
+
+</body>
+
+</html>
